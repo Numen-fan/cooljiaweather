@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">CoolJiaWeather</string>
+
+    <string name="china">中国</string>
 </resources>

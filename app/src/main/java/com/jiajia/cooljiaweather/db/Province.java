@@ -10,11 +10,11 @@ import org.litepal.crud.DataSupport;
 
 public class Province extends DataSupport {
 
-    private int id;
+    private int id; // 数据库中记录的id，可以是序号
 
     private String provinceName;
 
-    private String provinceCode;
+    private int provinceCode;   // 服务器返回的省id
 
     public int getId() {
         return id;
@@ -32,11 +32,11 @@ public class Province extends DataSupport {
         this.provinceName = provinceName;
     }
 
-    public String getProvinceCode() {
-        return provinceCode == null ? "" : provinceCode;
+    public int getProvinceCode() {
+        return provinceCode;
     }
 
-    public void setProvinceCode(String provinceCode) {
+    public void setProvinceCode(int provinceCode) {
         this.provinceCode = provinceCode;
     }
 }
